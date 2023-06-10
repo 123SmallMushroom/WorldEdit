@@ -1,6 +1,9 @@
 name: Gradle Build
-on: [push, pull_request]
-
+on:
+  push:
+    branches:
+      - 1.17.1
+  workflow_dispatch:
 jobs:
   build:
     name: Build WorldEdit on ${{ matrix.os }}
